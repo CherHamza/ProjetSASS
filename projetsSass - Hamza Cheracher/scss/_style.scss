@@ -1,0 +1,163 @@
+.navbar-nav .nav-link {
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+    color: $black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+.navbar-nav .nav-link:hover {
+    color: $primary
+  }
+
+.AccesFestival {
+  background-color: $secondary ;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+
+
+  
+}
+
+.accesF {
+  font-size: 1em;
+  margin-left: $margin-20px;
+}
+.btnAccesFestival{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+  transition: color 0.3s;
+  color: $black;
+}
+.btnA{
+  text-align: center;
+  border: 1px solid $black;
+  background-color: $black;
+  font-weight: bold;
+  color: $white;
+  text-decoration:none;
+  margin: 1%;
+  padding: 4px;
+  width: 300px;
+}
+.btnA:hover {
+  background-color: $white;
+  color: $black;
+}
+
+.btnB{
+  border: 1px solid $black;
+  background-color: $white;
+  font-weight: bold;
+  color: $black;
+  text-decoration:none;
+  margin: 1%;
+  padding: 4px;
+  margin-bottom: 5px;
+}
+.btnB:hover {
+  background-color: $black;
+  color: $white;
+}
+article {
+  width: 306px;
+  height: 424px;
+  position: relative;
+  margin: 10px;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: inset 0 0 1em $black, 0 0 2em $black;
+  }
+
+  div.cardTextTitle a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding-left: 10px;
+    
+  
+  }
+
+  div.cardTextInfo {
+    padding-left: 10px;
+    position: absolute;
+    left: 0;
+    top: -150px;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: $white;
+    border-bottom: 2px solid $primary;
+  }
+
+  div.cardTextDR {
+    position: absolute;
+    left: 0;
+    top: -100px;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: space-between;
+    color: $white;
+  }
+
+  div.cardTextLink {
+    position: absolute;
+    top: 90%;
+    left: 25%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+
+    a {
+      text-decoration: none;
+      text-align: center;
+      background-color: $white;
+      color: $primary;
+      transition: background-color 0.3s, color 0.3s;
+      margin: 10px;
+
+
+      &:hover {
+        color: $white;
+        background-color: $primary;
+      }
+    }
+  }
+
+  .cardImg img {
+    max-width: 100%;
+  }
+}
+
+
+@media screen and (min-width: map-get($breakPoints, "md")){
+  .btnAccesFestival{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .btnA{
+      width: auto;
+    }
+    
+  }
+}
